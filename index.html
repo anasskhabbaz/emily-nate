@@ -5,8 +5,13 @@
 <title>Main Page</title>
 <style>
 @font-face {
-  font-family: 'CustomFont';
-  src: url('custom-font.ttf') format('opentype');
+  font-family: 'CustomFont1';
+  src: url('custom-font1.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CustomFont2'; /* Second custom font */
+  src: url('custom-font2.ttf') format('opentype');
 }
 
 body, html {
@@ -37,7 +42,7 @@ body, html {
 
 h1 {
   font-size: 64px; /* Increase size as desired */
-  font-family: 'CustomFont', Arial, sans-serif; /* Apply custom font */
+  font-family: 'CustomFont1', Arial, sans-serif; /* Apply first custom font */
   font-weight: bold;
   margin-top: 20px;
 }
@@ -53,6 +58,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Apply the second custom font to "The Luck" and "The Hunt" */
+.custom-font2 {
+  font-family: 'CustomFont2', Arial, sans-serif;
+  font-size: 28px; /* Adjust size if needed */
+  font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -64,8 +76,8 @@ a:hover {
 
 <div class="content">
   <h1>The Apocalypse Competition</h1>
-  <a href="apocalypse-competition.html">The Luck</a>
-  <a href="hunt.html">The Hunt</a> <!-- New link added here -->
+  <a href="apocalypse-competition.html" class="custom-font2">The Luck</a>
+  <a href="hunt.html" class="custom-font2">The Hunt</a> <!-- Applied second custom font here -->
 </div>
 
 </body>
